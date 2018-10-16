@@ -38,7 +38,8 @@ class Mant extends Component {
       resultCE: this.state.selectCE * this.state.conteoCE,
       resultALI: this.state.selectALI * this.state.conteoALI,
       resultAIE: this.state.selectAIE * this.state.conteoAIE,
-      result: this.state.resultEE + this.state.resultSE + this.state.resultCE + this.state.resultALI + this.state.resultAIE
+      result: (this.state.select * this.state.conteoEE) + (this.state.selectSE * this.state.conteoSE) + (this.state.selectCE * this.state.conteoCE) + 
+      (this.state.selectALI * this.state.conteoALI) + (this.state.selectAIE * this.state.conteoAIE)
     })
     alert(`result ${this.state.result}`);
   }
