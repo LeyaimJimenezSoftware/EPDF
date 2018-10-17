@@ -32,7 +32,7 @@ class Mant extends Component {
 
   handleResultClick (e) {
     e.preventDefault()
-    this.setState({ 
+    this.setState({
       resultEE: this.state.select * this.state.conteoEE,
       resultSE: this.state.selectSE * this.state.conteoSE,
       resultCE: this.state.selectCE * this.state.conteoCE,
@@ -41,10 +41,7 @@ class Mant extends Component {
       result: (this.state.select * this.state.conteoEE) + (this.state.selectSE * this.state.conteoSE) + (this.state.selectCE * this.state.conteoCE) + 
       (this.state.selectALI * this.state.conteoALI) + (this.state.selectAIE * this.state.conteoAIE)
     })
-    alert(`result ${this.state.result}`);
   }
-
-// Updating the input values
   handleInputChanged (e) {
     if (e.target.id === "conteoEE") {
       this.setState({
